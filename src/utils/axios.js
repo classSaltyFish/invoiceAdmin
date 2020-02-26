@@ -16,7 +16,6 @@ function fixConfigs(config) {
   if (config.baseURL || isAbsolutePath(config.url)) {
     return fixConfig;
   }
-  console.log(typeof hasToken)
   if (hasToken()) {
     fixConfig.headers = {
       ...fixConfig.headers,
