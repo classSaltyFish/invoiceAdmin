@@ -20,7 +20,7 @@ function fixConfigs(config) {
   if (hasToken()) {
     fixConfig.headers = {
       ...fixConfig.headers,
-      authorization: "Token " + getToken(),
+      Authorization: "Token " + getToken(),
       'Access-Control-Allow-origin': '*',
     };
   }
