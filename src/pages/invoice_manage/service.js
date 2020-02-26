@@ -2,7 +2,7 @@ import request from '@/utils/request';
 import api from '../../utils/axios';
 
 export async function queryRule(params) {
-  return api.get(`/invoice/list/${params.key}/${params.current}/${params.pageSize}`);
+  return api.get('/invoice/list',{params:params});
 }
 
 export async function operateRule(params) {

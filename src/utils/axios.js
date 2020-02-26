@@ -20,7 +20,6 @@ function fixConfigs(config) {
     fixConfig.headers = {
       ...fixConfig.headers,
       Authorization: "Token " + getToken(),
-      'Access-Control-Allow-origin': '*',
     };
   }
 
@@ -44,11 +43,11 @@ const handleError = err => {
     });
   }
   if (err.toString() === 'Error: Network Error') {
-    setToken(null);
     message.error('网络错误');
-    window.g_app._store.dispatch({
-      type: 'login/logout',
-    });
+    // setToken(null);
+    // window.g_app._store.dispatch({
+    //   type: 'login/logout',
+    // });
   }
   // console.log("handleError", err.response)
   const { response } = err;

@@ -57,7 +57,10 @@ const Model = {
           }),
         });
       }
-    },
+      router.replace({
+        pathname: '/user/login',
+      })
+    }
   },
   reducers: {
     changeLoginStatus(state, { payload }) {
