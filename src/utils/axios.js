@@ -19,7 +19,7 @@ function fixConfigs(config) {
   if (hasToken()) {
     fixConfig.headers = {
       ...fixConfig.headers,
-      Authorization: "Token " + getToken(),
+      Authorization: "Token"+ " " + getToken(),
     };
   }
 

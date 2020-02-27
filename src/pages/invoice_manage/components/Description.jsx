@@ -57,7 +57,7 @@ const Description = props => {
           </Button>,
         ]}
       >
-        <img src={imgUrl+detail.imgUrl} alt='发票原图'/>
+        <img src={imgUrl+detail.imgUrl} alt='发票原图' style={{width:'100%'}}/>
       </Modal>
     </>
   );
