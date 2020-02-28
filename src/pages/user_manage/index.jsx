@@ -75,13 +75,7 @@ const TableList = () => {
   const columns = [
     {
       title: '用户id',
-      dataIndex: 'openId',
-      rules: [
-        {
-          required: true,
-          message: '规则名称为必填项',
-        },
-      ],
+      dataIndex: 'id',
     },
     {
       title: '昵称',
@@ -92,14 +86,12 @@ const TableList = () => {
       title: '报销金额合计',
       dataIndex: 'reimbursement',
       sorter: true,
-      hideInForm: true,
       hideInSearch: true,
       renderText: val => `${val} `,
     },
     {
       title: '状态',
       dataIndex: 'status',
-      hideInForm: true,
       valueEnum: {
         0: {
           text: '冻结',
@@ -116,7 +108,6 @@ const TableList = () => {
       dataIndex: 'latestSubmit',
       sorter: true,
       valueType: 'dateTime',
-      hideInForm: true,
       hideInSearch: true,
     },
     {

@@ -41,7 +41,7 @@ const Description = props => {
             (detail.status===1?<Badge status="success" text="审批通过" />:<Badge status="default" text="退回" />)
           }
         </Descriptions.Item>
-        <Descriptions.Item label="审批人">{detail.processor}</Descriptions.Item>
+        <Descriptions.Item label="审批人">{detail.processer}</Descriptions.Item>
         <Descriptions.Item label="上传者">{detail.uploader}</Descriptions.Item>
         <Descriptions.Item label="查看原图"><Button type='primary' onClick={() => handleVisible(true)}>查看原图</Button></Descriptions.Item>
       </Descriptions>
